@@ -8,12 +8,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +10 src/index.scss
+badd +8 src/index.scss
 badd +4 src/index.js
-badd +6 src/App.js
+badd +11 src/App.js
 argglobal
 %argdel
-edit src/index.scss
+edit src/index.js
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -50,28 +50,6 @@ setlocal fdn=20
 setlocal nofen
 wincmd w
 argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let &fdl = &fdl
-let s:l = 8 - ((7 * winheight(0) + 23) / 47)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 8
-normal! 0
-wincmd w
-argglobal
-if bufexists("src/index.js") | buffer src/index.js | else | edit src/index.js | endif
-if &buftype ==# 'terminal'
-  silent file src/index.js
-endif
 balt src/App.js
 setlocal fdm=manual
 setlocal fde=0
@@ -83,12 +61,35 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 4 - ((3 * winheight(0) + 23) / 47)
+let s:l = 9 - ((8 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 4
-normal! 017|
+keepjumps 9
+normal! 0
+wincmd w
+argglobal
+if bufexists("src/App.js") | buffer src/App.js | else | edit src/App.js | endif
+if &buftype ==# 'terminal'
+  silent file src/App.js
+endif
+balt src/index.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 11 - ((10 * winheight(0) + 23) / 47)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 11
+normal! 016|
 wincmd w
 2wincmd w
 exe 'vert 1resize ' . ((&columns * 30 + 105) / 211)
