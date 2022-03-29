@@ -10,10 +10,10 @@ endif
 set shortmess=aoO
 badd +3 src/index.css
 badd +8 src/index.js
-badd +8 public/index.html
+badd +6 src/App.js
 argglobal
 %argdel
-edit public/index.html
+edit src/App.js
 argglobal
 balt src/index.js
 setlocal fdm=manual
@@ -23,15 +23,15 @@ setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
-setlocal nofen
+setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 8 - ((7 * winheight(0) + 23) / 47)
+let s:l = 6 - ((5 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 8
-normal! 07|
+keepjumps 6
+normal! 032|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
