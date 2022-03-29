@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(15, 15, 15);
+  color: rgb(225, 225, 225);
+  font-family: "Montserrat", sans-serif;
+}
+
+/*   color variables */
+$clr-negative: #ff1744;
+$clr-positive: #2abf77;
+$clr-gray100: #f0f7f8;
+$clr-gray200: #cfd8dc;
+$clr-gray300: #a7b7be;
+$clr-gray400: #6b7e86;
+$clr-gray500: #425a65;
+
+/*   border radius */
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

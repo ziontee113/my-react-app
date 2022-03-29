@@ -12,9 +12,21 @@
 App	src/App.js	/^function App() {$/;"	f
 React App	public/index.html	/^    <title>React App<\/title>$/;"	j
 SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
-body	src/index.css	/^body {$/;"	s
+clr-gray100	src/index.scss	/^$clr-gray100: #f0f7f8;$/;"	v
+clr-gray200	src/index.scss	/^$clr-gray200: #cfd8dc;$/;"	v
+clr-gray300	src/index.scss	/^$clr-gray300: #a7b7be;$/;"	v
+clr-gray400	src/index.scss	/^$clr-gray400: #6b7e86;$/;"	v
+clr-gray500	src/index.scss	/^$clr-gray500: #425a65;$/;"	v
+clr-negative	src/index.scss	/^$clr-negative: #ff1744;$/;"	v
+clr-positive	src/index.scss	/^$clr-positive: #2abf77;$/;"	v
+radius	src/index.scss	/^$radius: 0.2rem;$/;"	v
 root	public/index.html	/^    <div id="root"><\/div>$/;"	I
-s:l	Session.vim	/^let s:l = 6 - ((5 * winheight(0) + 23) \/ 47)$/;"	v
+s:l	Session.vim	/^let s:l = 4 - ((3 * winheight(0) + 23) \/ 47)$/;"	v
+s:l	Session.vim	/^let s:l = 8 - ((7 * winheight(0) + 23) \/ 47)$/;"	v
+s:save_splitbelow	Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitright	Session.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_winminheight	Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminwidth	Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
