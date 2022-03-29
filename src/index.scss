@@ -73,15 +73,24 @@ h1.count {
 
 .negative {
   color: $clr-negative;
-  animation: pulse 500ms ease-in-out;
+  animation: negativePulse 500ms ease-in-out;
 }
 
 .positive {
   color: $clr-positive;
-  animation: pulse 500ms ease-in-out;
+  animation: positivePulse 500ms ease-in-out;
 }
 
-@keyframes pulse {
+@keyframes negativePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+@keyframes positivePulse {
   0%,
   100% {
     transform: scale(1);

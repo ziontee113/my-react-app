@@ -8,7 +8,7 @@ function App() {
   const incrementCount = () => setCount((prevCount) => prevCount + increment);
 
   const changeClass = () =>
-    count > 0 ? "positive" : count < 0 ? "negative" : null;
+    count > 0 ? "positive" : count < 0 ? "negative" : "";
 
   const incrementMore = () => setIncrement((prevCount) => prevCount + 1);
   const incrementLess = () => setIncrement((prevCount) => prevCount - 1);
