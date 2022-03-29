@@ -9,6 +9,10 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220327.0/
+.App	src/index.scss	/^.App {$/;"	c
+.button-wrapper	src/index.scss	/^.button-wrapper {$/;"	c
+.negative	src/index.scss	/^.negative {$/;"	c
+.positive	src/index.scss	/^.positive {$/;"	c
 App	src/App.js	/^function App() {$/;"	f
 React App	public/index.html	/^    <title>React App<\/title>$/;"	j
 SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
