@@ -8,8 +8,9 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +3 ~/learning/my-react-app/src/index.jsx
+badd +7 ~/learning/my-react-app/src/index.jsx
 badd +18 ~/learning/my-react-app/src/App.jsx
+badd +9 src/index.scss
 argglobal
 %argdel
 edit ~/learning/my-react-app/src/index.jsx
@@ -32,7 +33,7 @@ set winwidth=1
 exe 'vert 1resize ' . ((&columns * 105 + 105) / 211)
 exe 'vert 2resize ' . ((&columns * 105 + 105) / 211)
 argglobal
-balt ~/learning/my-react-app/src/App.jsx
+balt src/index.scss
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
